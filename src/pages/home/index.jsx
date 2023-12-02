@@ -1,14 +1,12 @@
 import React from 'react'
-import HomeHero from '../../components/home/HeroSection'
-import CategorySection from '../../components/home/CategorySection'
-import MeetTheAnimalsSectoin from '../../components/home/MeetTheAnimalsSectoin'
+import HomeHeroSection from '../../components/Home/HeroSection'
+import HomeSkillSection from '../../components/Home/SkillSection'
 
 function index() {
   return (
     <>
-      <HomeHero />
-      <CategorySection />
-      <MeetTheAnimalsSectoin />
+      <HomeHeroSection />
+      <HomeSkillSection />
     </>
   )
 }

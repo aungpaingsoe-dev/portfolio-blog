@@ -1,35 +1,24 @@
 import React from 'react'
 import { Route, Routes, } from 'react-router';
-import ScrollToTop from './components/shared/utls/ScrollToTop';
+import ScrollToTop from './components/Shared/Utils/ScrollToTop';
 import { useSelector } from "react-redux"
 import HomePage from './pages/home';
-import PetListPage from './pages/pet';
-import PetDetailPage from './pages/pet/detail';
-import AboutUsPage from './pages/about';
-import ContactUsPage from './pages/contact';
-import CommonHeader from './components/common/Header';
-import CommonFooter from "./components/common/Footer";
-import Modal from "./components/shared/modal/Modal";
+import CommonHeader from './components/Common/Header';
+import CommonFooter from "./components/Common/Footer";
+import Modal from "./components/Shared/Modals/Modal";
 
 const App = () => {
-  const isModalOpen = useSelector( (state) => state?.modal?.open );
+  const isModalOpen = useSelector((state) => state?.modal?.open);
   return (
     <div className=' text-dark '>
-      {/* Header */}
       <CommonHeader />
-      {/* Auto Scroll To Top When Component Change */}
       <ScrollToTop />
-      {/* Routes */}
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/pets' element={<PetListPage />} />
-        <Route path='/pets/:id' element={<PetDetailPage />} />
-        <Route path='/about-us' element={<AboutUsPage />} />
-        <Route path='/contact-us' element={<ContactUsPage />} />
       </Routes>
-      <CommonFooter />
-      {/* Modal */}
-      { isModalOpen && <Modal/> }
+      {/* <CommonFooter /> */}
+      {/* 🥡 Modal Box */}
+      {isModalOpen && <Modal />}
     </div>
   )
 }
