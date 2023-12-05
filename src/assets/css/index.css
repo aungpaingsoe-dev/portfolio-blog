@@ -11,8 +11,8 @@ html {
   overflow: hidden;
 }
 
-.category-card {
-  @apply h-[200px] rounded-2xl border shadow-xl flex flex-col justify-center items-center gap-3 hover:border-secondary cursor-pointer;
+.skill-card {
+  @apply h-[120px] rounded-2xl border shadow-md;
 }
 
 .nav-item {
@@ -38,3 +38,4 @@ html {
 .modal-close-btn {
   @apply absolute top-0 end-0 text-secondary cursor-pointer hover:opacity-75 text-7xl;
 }
+

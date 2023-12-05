@@ -24,3 +24,51 @@
   opacity: 0.5;
   z-index: -1;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #f8fafc;
+  background: #60A3D9;
+}
+
+::selection {
+  color: #f8fafc;
+  background: #60A3D9;
+}
+
+.swiper-pagination {
+  position: static !important;
+  padding-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background-color: #60A3D9;
+}
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #60A3D9 !important; /* Change text color */
+  font-size: 5px !important; /* Change font size */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  font-weight: bold !important;
+  background: transparent !important;
+}
+
+/* Change styles on hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 0.8 !important;
+}

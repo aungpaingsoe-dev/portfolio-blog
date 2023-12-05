@@ -9,10 +9,10 @@ const Header = () => {
   const location = useLocation();
 
   const isTransparent = _ => {
-    if (y > 150) {
-      return `bg-secondary fixed transition duration-300`;
+    if (y > 20) {
+      return `bg-light shadow-md fixed opacity-95 transition duration-300 z-20`;
     } else {
-      return `bg-transparent fixed`
+      return `shadow-md fixed opacity-95 transition duration-300 z-20`
     }
   }
 
@@ -20,14 +20,14 @@ const Header = () => {
 
   return (
     <div
-      className={`h-14 flex items-center ${location.pathname === '/' ? isTransparent() : 'bg-primary sticky'
-        } top-0 w-full z-10`}
+      className={`h-14 flex items-center ${location.pathname === '/' ? isTransparent() : 'sticky'
+        } top-0 w-full z-20`}
     >
-      <div className=' w-[95%] md:w-[70%] mx-auto flex justify-between items-center '>
+      <div className=' w-[95%] md:w-[65%] mx-auto flex justify-between items-center '>
         <Link to={'/'}>
           <div className=' flex items-center gap-1 cursor-pointer '>
             <span className=' text-xl md:text-2xl font-semibold '>
-              <span className=' text-secondary '>Phyo</span>Z
+              <span className=' text-primary '>Phyo</span>Z
             </span>
           </div>
         </Link>
