@@ -10,9 +10,9 @@ const Header = () => {
 
   const isTransparent = _ => {
     if (y > 20) {
-      return `fixed opacity-95 transition duration-300 z-20`;
+      return `fixed opacity-90 transition duration-300 z-20`;
     } else {
-      return `fixed opacity-95 transition duration-300 z-20`
+      return `fixed opacity-90 transition duration-300 z-20`
     }
   }
 
@@ -59,6 +59,11 @@ const Header = () => {
                   Contact
                 </a>
               </li>
+              <li>
+                <NavLink to={'/blogs'} className=' nav-item md:hidden ' >
+                  Blog List
+                </NavLink>
+              </li>
             </ul> : <ul>
               <li>
                 <NavLink to={'/'} className=' nav-item hidden md:block '>
@@ -67,7 +72,6 @@ const Header = () => {
               </li>
             </ul>
           }
-
         </div>
       </div>
     </div>

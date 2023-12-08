@@ -9,6 +9,7 @@ import BlogPage from "./pages/blog";
 import BlogDetailPage from "./pages/blog/detail";
 import CommonHeader from './components/Common/Header';
 import CommonFooter from "./components/Common/Footer";
+import CommonMobileFooter from "./components/Common/MobileFooter";
 import Modal from "./components/Shared/Modals/Modal";
 
 const App = () => {
@@ -53,6 +54,9 @@ const App = () => {
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
       <CommonFooter />
+      <div className=' md:hidden  '>
+        <CommonMobileFooter />
+      </div>
       {/* 🥡 Modal Box */}
       {isModalOpen && <Modal />}
       <motion.div

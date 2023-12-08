@@ -3,24 +3,32 @@
         "id": 1,
         "title": "Winfinace",
         "image_url": "/images/skills/web_developer.png",
-        "content": "text",
+        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
         "category": "personal",
-        "date": "June 9, 2022 | at  10:12 AM"
+        "date": "June 9, 2023 | at  5:12 AM"
     },
     {
         "id": 2,
         "title": "TeaTalk",
         "image_url": "/images/skills/web_developer.png",
-        "content": "text",
+        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
         "category": "personal",
-        "date": "June 9, 2022 | at  10:12 AM"
+        "date": "June 9, 2023 | at  06:12 AM"
     },
     {
         "id": 3,
-        "title": "Winfinace",
+        "title": "MyDoctor",
         "image_url": "/images/skills/web_developer.png",
-        "content": "text",
-        "category": "personal",
-        "date": "June 9, 2022 | at  10:12 AM"
+        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
+        "category": "project",
+        "date": "Dec 9, 2023 | at  10:12 PM"
+    },
+    {
+        "id": 4,
+        "title": "Coursia",
+        "image_url": "/images/skills/web_developer.png",
+        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
+        "category": "developing",
+        "date": "Dec 9, 2023 | at  10:12 PM"
     }
 ]

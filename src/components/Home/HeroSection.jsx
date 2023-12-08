@@ -3,28 +3,28 @@ import { PiArrowFatDown } from "react-icons/pi";
 
 const HeroSection = () => {
     return (
-        <div id="home" className=' w-[95%] md:w-[65%] mx-auto md:h-screen flex flex-col-reverse md:flex-row items-center relative '>
+        <div id="home" className=' w-[98%] md:w-[65%] mx-auto h-screen flex gap-5 md:gap-0 flex-col-reverse md:flex-row items-center relative '>
             <div className=' basis-1/2 '>
-                <div className=' flex flex-col gap-6 '>
+                <div className=' flex flex-col gap-2 md:gap-6 '>
                     <motion.div
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.2 }}
-                        className=' text-xl text-primary '>
+                        className=' text-md md:text-xl text-primary '>
                         Hi my name is
                     </motion.div>
                     <motion.div
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.4 }}
-                        className=' text-6xl font-bold '>
+                        className=' text-2xl md:text-6xl font-bold '>
                         Phyo Zaw
                     </motion.div>
                     <motion.div
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.6 }}
-                        className=' text-5xl text-primary lobster-tow-font '>
+                        className=' text-2xl md:text-5xl text-primary lobster-tow-font  '>
                         I explore how people and technology are making the world a better place
                     </motion.div>
                     <motion.div
@@ -37,8 +37,8 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className=' basis-1/2 '>
-                <div className=" flex flex-col items-center justify-center relative ">
-                    <div className=" w-8/12 relative ">
+                <div className=" flex flex-col mt-16 md:mt-0 md:items-center md:justify-center relative ">
+                    <div className=" w-12/12 md:w-8/12 relative ">
                         <motion.img
                             initial={{
                                 opacity: 0,
@@ -55,7 +55,7 @@ const HeroSection = () => {
                                 bounce: 0.5
                             }}
                             src="/images/default/hero.jpg"
-                            className=" h-[65vh] object-cover grayscale-[40%] shadow-sm "
+                            className=" h-[55vh] md:h-[65vh] object-cover grayscale-[40%] shadow-sm "
                             alt=""
                         />
                         <motion.img
@@ -63,7 +63,7 @@ const HeroSection = () => {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 3 }}
                             src="/images/default/dots_bg.jpg"
-                            className=" h-[65vh] absolute -top-10 -end-10 -z-10 "
+                            className=" h-[55vh] md:h-[65vh] absolute -top-10 -end-10 -z-10 "
                             alt="" />
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
@@ -79,7 +79,7 @@ const HeroSection = () => {
                                     restDelta: 0.001
                                 }
                             }}
-                            className=" absolute -bottom-10 -end-12 w-[110px] h-[110px] z-10 bg-secondary opacity-80 rounded-full flex items-center justify-center ">
+                            className=" absolute -bottom-8 -end-7 md:-bottom-10 md:-end-12 w-[90px] h-[90px] md:w-[110px] md:h-[110px] z-10 bg-secondary opacity-80 rounded-full flex items-center justify-center ">
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
@@ -95,11 +95,11 @@ const HeroSection = () => {
                                     restDelta: 0.001
                                 }
                             }}
-                            className=" absolute bottom-7 -end-12 w-[80px] h-[80px] opacity-50 bg-secondary rounded-full "></motion.div>
+                            className=" absolute bottom-7 -end-5 w-[60px] h-[60px] md:w-[80px] md:h-[80px] opacity-50 bg-secondary rounded-full "></motion.div>
                     </div>
                 </div>
             </div>
-            <div className=' absolute bottom-5 left-1/2 '>
+            <div className=' md:absolute bottom-5 left-1/2 '>
                 <motion.a
                     href="#skills"
                     initial={{ opacity: 0 }}

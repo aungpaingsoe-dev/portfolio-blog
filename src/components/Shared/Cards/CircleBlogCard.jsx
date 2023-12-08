@@ -5,6 +5,15 @@ import { CiCalendar } from "react-icons/ci";
 
 
 const CirclePetCard = ({ blog }) => {
+
+    const except = (text, limit = 100) => {
+        if (text.length > limit) {
+            return text.slice(0, limit) + "..."
+        } else {
+            return text;
+        }
+    }
+
     return (
         <div className=' flex flex-col items-center justify-center gap-4 px-4'>
             <motion.img
@@ -19,14 +28,14 @@ const CirclePetCard = ({ blog }) => {
                 <div className=' text-xl text-primary '>
                     {blog.title}
                 </div>
-                <div className=' flex items-center gap-1 '>
+                <div className=' flex items-center justify-center gap-1'>
                     <CiCalendar />
-                    <div className=' text-xs italic '>{ blog.date }</div>
+                    <div className=' text-xs italic '>{blog.date}</div>
                 </div>
                 <div>
-                    {blog.content}
+                    {except(blog.content)}
                 </div>
-                <Link to='/#' className=' text-md font-medium hover:text-primary '>
+                <Link to='/blogs' className=' text-md font-medium hover:text-primary '>
                     Read More
                 </Link>
             </div>

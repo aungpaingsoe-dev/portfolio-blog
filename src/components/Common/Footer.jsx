@@ -4,7 +4,7 @@ import { FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=' w-full flex flex-col gap-5 items-center justify-center py-10 '>
+    <div className=' w-full flex flex-col gap-5 items-center justify-center pb-20 md:py-10 '>
       <div className=' flex gap-8 '>
         <ul className=' hover:text-secondary cursor-pointer '>
           <FaGithub className=' text-2xl ' />

@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <>
             <div id='contact'></div>
-            <div className=' pb-20 '>
-                <div className=' w-[65%] mx-auto text-center'>
+            <div className=' mb-10 md:pb-0 '>
+                <div className=' w-[95%] md:w-[65%] mx-auto text-center'>
                     <motion.div
                         viewport={{ once: true }}
                         initial={{ y: 10, opacity: 0 }}
@@ -20,7 +20,7 @@ const Footer = () => {
                         initial={{ y: 10, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
-                        className=' mx-auto text-center mb-8 w-1/2 '>
+                        className=' mx-auto text-center mb-5 md:mb-8 md:w-1/2 '>
                         I hope this message finds you well. I wanted to reach out and explore the possibility of connecting with you
                     </motion.div>
                     <motion.div

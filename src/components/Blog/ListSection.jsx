@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 import { CiCalendar } from "react-icons/ci";
-import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 import blogData from "../../../public/data/blogs.json"
 
@@ -23,13 +23,13 @@ const ListSection = () => {
     }, [])
 
     return (
-        <div className=' w-[45%] mx-auto my-10 flex flex-col gap-5 '>
+        <div className=' w-[95%] md:w-[45%] mx-auto my-10 flex flex-col gap-3 md:gap-5 '>
             <motion.div
                 viewport={{ once: true }}
                 initial={{ y: 10, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
-                className=' text-2xl  lobster-tow-font '>
+                className=' text-2xl  lobster-tow-font flex items-center gap-2 '>
                 Personal Blog
             </motion.div>
             <motion.div

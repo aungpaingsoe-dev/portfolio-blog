@@ -2,7 +2,14 @@ import React from 'react'
 import { motion } from "framer-motion"
 
 const PortfolioCard = ({ portfolio }) => {
-    console.log(portfolio)
+
+    const handleGoProjectUrl = () => {
+        let a = document.createElement("a");
+        a.target = "_blank";
+        a.href = portfolio?.project_url;
+        a.click();
+    }
+
     return (
         <motion.div
             viewport={{ once: true }}
@@ -10,7 +17,7 @@ const PortfolioCard = ({ portfolio }) => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
         >
-            <div class="container cursor-pointer">
+            <div class="container cursor-pointer" onClick={handleGoProjectUrl} >
                 <div class="content">
                     <div class="content-overlay"></div>
                     <motion.img
