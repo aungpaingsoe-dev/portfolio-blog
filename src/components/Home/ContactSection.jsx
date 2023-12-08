@@ -1,0 +1,43 @@
+import React from 'react'
+import { motion } from 'framer-motion';
+
+const Footer = () => {
+    return (
+        <>
+            <div id='contact'></div>
+            <div className=' pb-20 '>
+                <div className=' w-[65%] mx-auto text-center'>
+                    <motion.div
+                        viewport={{ once: true }}
+                        initial={{ y: 10, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", bounce: 0.6, delay: 0.2 }}
+                        className='lobster-tow-font text-3xl text-center mb-5 underline decoration-wavy underline-offset-4 decoration-primary '>
+                        Contact
+                    </motion.div>
+                    <motion.div
+                        viewport={{ once: true }}
+                        initial={{ y: 10, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
+                        className=' mx-auto text-center mb-8 w-1/2 '>
+                        I hope this message finds you well. I wanted to reach out and explore the possibility of connecting with you
+                    </motion.div>
+                    <motion.div
+                        viewport={{ once: true }}
+                        initial={{ y: 10, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", bounce: 0.6, delay: 0.5 }}
+                    >
+                        <a href="mailto: phyozawdev@gmail.com" className=' default-btn '>
+                            Get in touch!
+                        </a>
+                    </motion.div>
+                </div>
+            </div>
+        </>
+
+    )
+}
+
+export default Footer

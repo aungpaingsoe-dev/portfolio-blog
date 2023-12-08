@@ -19,9 +19,9 @@ html {
   @apply border-transparent border-b-4  hover:border-secondary transition-all;
 }
 
-.active {
+/* .active {
   @apply border-b-4 border-secondary;
-}
+} */
 
 .default-btn {
   @apply py-3 px-7 hover:shadow-lg hover:bg-dark transition-all bg-secondary rounded-full text-white;

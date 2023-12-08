@@ -1,21 +1,32 @@
 import React from 'react'
-import Men from "/images/default/men.jpg";
+import { motion } from "framer-motion"
 
-const PortfolioCard = () => {
+const PortfolioCard = ({ portfolio }) => {
+    console.log(portfolio)
     return (
-        <div>
+        <motion.div
+            viewport={{ once: true }}
+            initial={{ y: 10, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
+        >
             <div class="container cursor-pointer">
                 <div class="content">
                     <div class="content-overlay"></div>
-                    <img class="content-image h-[400px] object-center object-cover shadow-md border border-slate-200 "
-                        src={ Men } alt="" />
+                    <motion.img
+                        viewport={{ once: true }}
+                        initial={{ y: 10, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
+                        class="content-image h-[400px] object-center object-cover shadow-md border border-slate-200 "
+                        src={portfolio?.image_url} alt="" />
                     <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">This is a title</h3>
-                        <p class="content-text">This is a short description</p>
+                        <h3 class="content-title">{portfolio?.title}</h3>
+                        <p class="content-text">{portfolio?.description}</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

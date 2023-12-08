@@ -10,9 +10,9 @@ const Header = () => {
 
   const isTransparent = _ => {
     if (y > 20) {
-      return `bg-light shadow-md fixed opacity-95 transition duration-300 z-20`;
+      return `fixed opacity-95 transition duration-300 z-20`;
     } else {
-      return `shadow-md fixed opacity-95 transition duration-300 z-20`
+      return `fixed opacity-95 transition duration-300 z-20`
     }
   }
 
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div
       className={`h-14 flex items-center ${location.pathname === '/' ? isTransparent() : 'sticky'
-        } top-0 w-full z-20`}
+        } top-0 w-full z-20 bg-light shadow-md`}
     >
       <div className=' w-[95%] md:w-[65%] mx-auto flex justify-between items-center '>
         <Link to={'/'}>
@@ -32,13 +32,42 @@ const Header = () => {
           </div>
         </Link>
         <div>
-          <ul className=' flex gap-10 font-bold '>
-            <li>
-              <NavLink to={'/'} className=' nav-item hidden md:block ' activeclassname="active">
-                Home
-              </NavLink>
-            </li>
-          </ul>
+          {
+            location.pathname === '/' ? <ul className=' flex gap-5  '>
+              <li>
+                <a href={'#home'} className=' nav-item hidden md:block '>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href={'#skills'} className=' nav-item hidden md:block ' >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href={'#projects'} className=' nav-item hidden md:block ' >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href={'#blogs'} className=' nav-item hidden md:block' >
+                  Blogs
+                </a>
+              </li>
+              <li>
+                <a href={'#contact'} className=' nav-item hidden md:block ' >
+                  Contact
+                </a>
+              </li>
+            </ul> : <ul>
+              <li>
+                <NavLink to={'/'} className=' nav-item hidden md:block '>
+                  Portfolio
+                </NavLink>
+              </li>
+            </ul>
+          }
+
         </div>
       </div>
     </div>

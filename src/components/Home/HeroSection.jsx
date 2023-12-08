@@ -3,7 +3,7 @@ import { PiArrowFatDown } from "react-icons/pi";
 
 const HeroSection = () => {
     return (
-        <div className=' w-[95%] md:w-[65%] mx-auto md:h-screen flex flex-col-reverse md:flex-row items-center relative '>
+        <div id="home" className=' w-[95%] md:w-[65%] mx-auto md:h-screen flex flex-col-reverse md:flex-row items-center relative '>
             <div className=' basis-1/2 '>
                 <div className=' flex flex-col gap-6 '>
                     <motion.div
@@ -100,14 +100,15 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className=' absolute bottom-5 left-1/2 '>
-                <motion.div
+                <motion.a
+                    href="#skills"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ type: "spring", delay: 0.9 }}
-                    className=" animate-bounce cursor-pointer flex flex-col justify-center items-center ">
+                    className=" animate-bounce cursor-pointer flex flex-col justify-center items-center hover:text-secondary ">
                     <div>Scroll</div>
                     <PiArrowFatDown className=" text-3xl " />
-                </motion.div>
+                </motion.a>
             </div>
         </div>
     )
