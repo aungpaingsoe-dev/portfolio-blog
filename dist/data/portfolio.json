@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Winfinace",
+        "image_url": "/images/skills/web_developer.png",
+        "description": "text",
+        "project_url": "http://localhost:5173/blogs/2"
+    },
+    {
+        "id": 2,
+        "title": "TeaTalk",
+        "image_url": "/images/skills/web_developer.png",
+        "description": "text",
+        "project_url": "http://localhost:5173/blogs/2"
+    },
+    {
+        "id": 3,
+        "title": "Winfinace",
+        "image_url": "/images/skills/web_developer.png",
+        "description": "text",
+        "project_url": "http://localhost:5173/blogs/2"
+    }
+]
