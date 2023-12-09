@@ -66,7 +66,7 @@ const Header = () => {
               </li>
             </ul> : <ul>
               <li>
-                <NavLink to={'/'} className=' nav-item hidden md:block '>
+                <NavLink to={'/'} className=' nav-item md:block '>
                   Portfolio
                 </NavLink>
               </li>

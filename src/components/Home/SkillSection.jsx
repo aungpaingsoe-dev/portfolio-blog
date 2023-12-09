@@ -6,6 +6,7 @@ import { VscCommentUnresolved } from "react-icons/vsc";
 import { LiaUserTieSolid } from "react-icons/lia";
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import { PiProjectorScreen } from "react-icons/pi";
+import skillData from "../../server/skills.json"
 
 const SkillSection = () => {
   return (
@@ -104,7 +105,7 @@ const SkillSection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{
-                    delay: 1.5,
+                    delay: 1.2,
                     duration: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                     scale: {
@@ -129,7 +130,7 @@ const SkillSection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{
-                    delay: 1.8,
+                    delay: 1.4,
                     duration: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                     scale: {
@@ -154,7 +155,7 @@ const SkillSection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{
-                    delay: 2,
+                    delay: 1.7,
                     duration: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                     scale: {
@@ -183,9 +184,7 @@ const SkillSection = () => {
               viewport={{ once: true }}
               className=' text-start mt-2 '
             >
-              <span className=' text-secondary italic font-medium '>Greetings</span> , I'm a seasoned Web Developer skilled in crafting impactful websites.
-              With a keen business acumen, effective communication, and proven team leadership,
-              I excel in problem-solving and project management. Let's elevate your web presence together.
+              <span className=' text-secondary italic font-medium '>Greetings</span> , { skillData.about_me } 
             </motion.div>
             <motion.div
               initial={{ y: 10, opacity: 0 }}
@@ -195,7 +194,7 @@ const SkillSection = () => {
             >
               <div className=' my-2 text-secondary font-medium '>My Working Experience</div>
               <div>
-                I have 4 year experience at <a href="https://www.umgmyanmar.com" target='_blank' className=' text-secondary italic font-medium '> UMG Myanmar </a>with Department Head Position.
+                { skillData.work_experience }
               </div>
             </motion.div>
           </div>

@@ -17,7 +17,7 @@ const PortfolioCard = ({ portfolio }) => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
         >
-            <div class="container cursor-pointer" onClick={handleGoProjectUrl} >
+            <div class="container cursor-pointer " onClick={handleGoProjectUrl} >
                 <div class="content">
                     <div class="content-overlay"></div>
                     <motion.img

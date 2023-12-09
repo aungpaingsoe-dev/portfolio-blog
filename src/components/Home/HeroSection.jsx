@@ -1,7 +1,9 @@
 import { motion } from "framer-motion"
 import { PiArrowFatDown } from "react-icons/pi";
+import homeData from "../../server/home.json";
 
 const HeroSection = () => {
+    console.log(homeData)
     return (
         <div id="home" className=' w-[98%] md:w-[65%] mx-auto h-screen flex gap-5 md:gap-0 flex-col-reverse md:flex-row items-center relative '>
             <div className=' basis-1/2 '>
@@ -18,21 +20,21 @@ const HeroSection = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.4 }}
                         className=' text-2xl md:text-6xl font-bold '>
-                        Phyo Zaw
+                        { homeData.name }
                     </motion.div>
                     <motion.div
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.6 }}
-                        className=' text-2xl md:text-5xl text-primary lobster-tow-font  '>
-                        I explore how people and technology are making the world a better place
+                        className=' text-2xl md:text-4xl text-primary lobster-tow-font  '>
+                        { homeData.intro }
                     </motion.div>
                     <motion.div
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.8 }}
                     >
-                        I'm a Back-End Web Developer skilled in Node.js, Express.js, PHP, and Laravel. I specialize in crafting robust APIs and scalable server-side applications.
+                        { homeData.content }
                     </motion.div>
                 </div>
             </div>
@@ -54,7 +56,7 @@ const HeroSection = () => {
                                 type: "spring",
                                 bounce: 0.5
                             }}
-                            src="/images/default/hero.jpg"
+                            src={ homeData.image }
                             className=" h-[55vh] md:h-[65vh] object-cover grayscale-[40%] shadow-sm "
                             alt=""
                         />

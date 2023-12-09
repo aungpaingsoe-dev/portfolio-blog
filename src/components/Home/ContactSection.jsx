@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import contactData from "../../server/contact.json"
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
                         className=' mx-auto text-center mb-5 md:mb-8 md:w-1/2 '>
-                        I hope this message finds you well. I wanted to reach out and explore the possibility of connecting with you
+                        { contactData.content }
                     </motion.div>
                     <motion.div
                         viewport={{ once: true }}
@@ -29,7 +30,7 @@ const Footer = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.5 }}
                     >
-                        <a href="mailto: phyozawdev@gmail.com" className=' default-btn '>
+                        <a href={`mailto: ${contactData.email}`} className=' default-btn '>
                             Get in touch!
                         </a>
                     </motion.div>

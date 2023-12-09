@@ -3,6 +3,7 @@ import { Route, Routes, } from 'react-router';
 import { motion } from 'framer-motion'
 import ScrollToTop from './components/Shared/Utils/ScrollToTop';
 import { useSelector } from "react-redux";
+import { useLocation } from 'react-router-dom';
 import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from './pages/home';
 import BlogPage from "./pages/blog";
@@ -14,6 +15,7 @@ import Modal from "./components/Shared/Modals/Modal";
 
 const App = () => {
   const isModalOpen = useSelector((state) => state?.modal?.open);
+  const location = useLocation();
 
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -54,9 +56,11 @@ const App = () => {
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
       <CommonFooter />
-      <div className=' md:hidden  '>
-        <CommonMobileFooter />
-      </div>
+      {
+        location.pathname === '/' && <div className=' md:hidden ' >
+          <CommonMobileFooter />
+        </div>
+      }
       {/* 🥡 Modal Box */}
       {isModalOpen && <Modal />}
       <motion.div

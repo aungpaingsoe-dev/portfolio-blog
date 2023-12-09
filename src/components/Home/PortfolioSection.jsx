@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import PortfolioCard from '../Shared/Cards/PortfolioCard';
 import { FaGithub } from "react-icons/fa";
-import portfolioData from "../../../public/data/portfolio.json"
+import portfolioData from "../../server/portfolio.json";
 
 const PortfolioSection = () => {
     return (
@@ -27,7 +27,7 @@ const PortfolioSection = () => {
                 </motion.div>
                 <div className=' flex flex-wrap '>
                     {
-                        portfolioData?.map(portfolio => {
+                        portfolioData?.slice(0,6)?.map(portfolio => {
                             return (
                                 <motion.div
                                     key={portfolio.id}

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import { CiCalendar } from "react-icons/ci";
 import { motion } from "framer-motion"
-import blogData from "../../../public/data/blogs.json"
+import blogData from "../../server/blogs.json"
 
 const ListSection = () => {
 
@@ -57,6 +57,7 @@ const ListSection = () => {
                 blogs?.map(blog => {
                     return (
                         <motion.div
+                            key={ blog.id }
                             viewport={{ once: true }}
                             initial={{ y: 10, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}

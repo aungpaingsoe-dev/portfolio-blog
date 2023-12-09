@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper';
 import { Link } from 'react-router-dom';
-import blogData from "../../../public/data/blogs.json"
+import blogData from "../../server/blogs.json"
 
 const BlogSection = () => {
     const screenWidth = window.innerWidth;
@@ -45,7 +45,7 @@ const BlogSection = () => {
                             modules={[Autoplay, Pagination]}
                         >
                             {
-                                blogData?.map(blog => {
+                                blogData?.slice(0, 6).map(blog => {
                                     return (
                                         <SwiperSlide key={blog.id}>
                                             <CircleBlogCard blog={blog} />
