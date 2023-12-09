@@ -1,43 +1,43 @@
 [
     {
         "id": 1,
-        "title": "Winfinace",
-        "image_url": "/images/skills/web_developer.png",
+        "title": "Project One",
+        "image_url": "/images/projects/project1.jpg",
         "description": "text",
         "project_url": "http://localhost:5173/blogs/2"
     },
     {
         "id": 2,
-        "title": "TeaTalk",
-        "image_url": "/images/skills/web_developer.png",
+        "title": "Project Two",
+        "image_url": "/images/projects/project2.jpg",
         "description": "text",
         "project_url": "http://localhost:5173/blogs/2"
     },
     {
         "id": 3,
-        "title": "Winfinace",
-        "image_url": "/images/skills/web_developer.png",
+        "title": "Project Three",
+        "image_url": "/images/projects/project3.jpg",
         "description": "text",
         "project_url": "http://localhost:5173/blogs/2"
     },
     {
         "id": 4,
-        "title": "Winfinace",
-        "image_url": "/images/skills/web_developer.png",
+        "title": "Project Four",
+        "image_url": "/images/projects/project4.jpg",
         "description": "text",
         "project_url": "http://localhost:5173/blogs/2"
     },
     {
         "id": 5,
-        "title": "TeaTalk",
-        "image_url": "/images/skills/web_developer.png",
+        "title": "Project Five",
+        "image_url": "/images/projects/project5.jpg",
         "description": "text",
         "project_url": "http://localhost:5173/blogs/2"
     },
     {
         "id": 6,
-        "title": "Winfinace",
-        "image_url": "/images/skills/web_developer.png",
+        "title": "Project Six",
+        "image_url": "/images/projects/project6.jpg",
         "description": "text",
         "project_url": "http://localhost:5173/blogs/2"
     }

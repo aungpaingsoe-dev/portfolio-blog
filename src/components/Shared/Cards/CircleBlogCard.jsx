@@ -22,7 +22,7 @@ const CirclePetCard = ({ blog }) => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
                 src={blog.image_url}
-                className='  h-[250px] object-cover rounded-full '
+                className='  h-[250px] w-[250px] object-cover rounded-full '
                 alt="" />
             <div className=' flex flex-col gap-3 text-center '>
                 <div className=' text-xl text-primary '>
@@ -35,7 +35,7 @@ const CirclePetCard = ({ blog }) => {
                 <div>
                     {except(blog.content)}
                 </div>
-                <Link to='/blogs' className=' text-md font-medium hover:text-primary '>
+                <Link to={`/blogs/${blog.id}`} className=' text-md font-medium hover:text-primary '>
                     Read More
                 </Link>
             </div>

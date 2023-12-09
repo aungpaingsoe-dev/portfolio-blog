@@ -3,6 +3,14 @@ import { motion } from "framer-motion"
 
 const PortfolioCard = ({ portfolio }) => {
 
+    const except = (text, limit = 50) => {
+        if (text.length > limit) {
+            return text.slice(0, limit) + "..."
+        } else {
+            return text;
+        }
+    }
+
     const handleGoProjectUrl = () => {
         let a = document.createElement("a");
         a.target = "_blank";
@@ -29,7 +37,7 @@ const PortfolioCard = ({ portfolio }) => {
                         src={portfolio?.image_url} alt="" />
                     <div class="content-details fadeIn-bottom">
                         <h3 class="content-title">{portfolio?.title}</h3>
-                        <p class="content-text">{portfolio?.description}</p>
+                        <p class="content-text">{ except(portfolio?.description) }</p>
                     </div>
                 </div>
             </div>
