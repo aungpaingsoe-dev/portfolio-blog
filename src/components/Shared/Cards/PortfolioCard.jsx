@@ -33,7 +33,7 @@ const PortfolioCard = ({ portfolio }) => {
                         initial={{ y: 10, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.3 }}
-                        class="content-image h-[400px] object-center object-cover shadow-md border border-slate-200 "
+                        class="content-image w-full h-[400px] object-center object-cover shadow-md border border-slate-200 "
                         src={portfolio?.image_url} alt="" />
                     <div class="content-details fadeIn-bottom">
                         <h3 class="content-title">{portfolio?.title}</h3>

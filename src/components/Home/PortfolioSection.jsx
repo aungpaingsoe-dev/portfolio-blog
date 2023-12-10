@@ -35,7 +35,7 @@ const PortfolioSection = () => {
                                     initial={{ y: 10, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     transition={{ type: "spring", bounce: 0.6, delay: 0.2 }}
-                                    className=' md:basis-1/3 md:px-2 '>
+                                    className=' w-full md:basis-1/3 md:px-2 '>
                                     <PortfolioCard portfolio={portfolio} />
                                 </motion.div>
                             )
