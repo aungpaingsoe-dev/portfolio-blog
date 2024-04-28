@@ -1,66 +1,34 @@
 [
     {
         "id": 1,
-        "title": "Hello I'm PhyoZ",
-        "image_url": "/images/blogs/blog1.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "personal",
+        "title": "About Winfinance",
+        "image_url": "/images/blogs/winfinance.jpg",
+        "content": "Winfinance project ဟာ UMG business ထဲကငွေချေးလုပ်ငန်းတစ်ခုဖြစ်ပါတယ်။ ဒီ Project ကို Hanover ယူပြီးချိန်မှစ၍ BackEnd and FrontEnd process အားလုံးကိုတာ၀န်ယူ ဖြေရှင်းပေးခဲ့ပါသည်။ Odoo Integration ဖြစ်တာကြောင့်မို့ Odoo Api ကို Web ဘက်မှ Handling လုပ်ခြင်း Mobile Api များ Develop လုပ်ပေးခြင်း Api and Front-End Additional နှင့် Issues များကို ဖြေရှင်းဆောင်ရွက်ပေးခဲ့ပါသည်။",
+        "category": "development",
         "date": "June 9, 2023 | at  5:12 AM"
     },
     {
         "id": 2,
-        "title": "Blog One",
-        "image_url": "/images/blogs/blog2.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "personal",
+        "title": "About Dashboard Template",
+        "image_url": "/images/blogs/shadcn-admin.jpg",
+        "content": "Shadcn Ui ကိုအသုံးပြုပြီး Dashboard Template တစ်ခုဖန်တီးထားခြင်းဖြစ်ပါတယ်။ React ကိုသုံးထားပြီး Redux Store လို့ State Mangement နည်းပညာတွေကို ထည်းသွင်းရေးသားထားပါတယ်။ Mobile Responsive ကိုလည်းသေချာရေးသားထားပြီး Api အတွက် Platzi api ကိုအသုံးပြုထားပါတယ်။",
+        "category": "development",
         "date": "June 9, 2023 | at  06:12 AM"
     },
     {
         "id": 3,
-        "title": "Blog Two",
-        "image_url": "/images/blogs/blog3.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "project",
-        "date": "Dec 9, 2023 | at  10:12 PM"
-    },
-    {
-        "id": 4,
-        "title": "Blog Three",
+        "title": "UMG Team Work",
         "image_url": "/images/blogs/blog4.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "developing",
+        "content": "...",
+        "category": "personal",
         "date": "Dec 9, 2023 | at  10:12 PM"
     },
     {
-        "id": 5,
-        "title": "Blog Four",
-        "image_url": "/images/blogs/blog5.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "developing",
-        "date": "Dec 9, 2023 | at  10:12 PM"
-    },
-    {
-        "id": 6,
-        "title": "Blog Five",
-        "image_url": "/images/blogs/blog6.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "developing",
-        "date": "Dec 9, 2023 | at  10:12 PM"
-    },
-    {
-        "id": 7,
-        "title": "Blog Seven",
-        "image_url": "/images/blogs/blog7.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "developing",
-        "date": "Dec 9, 2023 | at  10:12 PM"
-    },
-    {
-        "id": 8,
-        "title": "Blog Eight",
-        "image_url": "/images/blogs/blog8.jpg",
-        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque dolorem eveniet officiis explicabo asperiores tenetur veritatis quos, vitae aut voluptates rem ad necessitatibus mollitia repudiandae ducimus. Nostrum, a magnam?",
-        "category": "developing",
+        "id": 3,
+        "title": "Buddies",
+        "image_url": "/images/blogs/friday.jpg",
+        "content": "...",
+        "category": "personal",
         "date": "Dec 9, 2023 | at  10:12 PM"
     }
 ]

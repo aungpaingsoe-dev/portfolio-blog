@@ -27,7 +27,8 @@ const Header = () => {
         <Link to={'/'}>
           <div className=' flex items-center gap-1 cursor-pointer '>
             <span className=' text-xl md:text-2xl font-semibold '>
-              <span className=' text-primary '>Phyo</span>Z
+              Aung
+              <span className=' text-primary '>.dev</span>
             </span>
           </div>
         </Link>

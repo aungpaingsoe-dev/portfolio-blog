@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "title": "Project One",
-        "image_url": "/images/projects/project1.jpg",
-        "description": "text",
-        "project_url": "http://localhost:5173/blogs/2"
+        "title": "Platzi + Shadcn Admin",
+        "image_url": "/images/projects/shadcn-admin.png",
+        "description": "Admin Dashboard",
+        "project_url": "https://platzi-shadcn-admin.netlify.app/dashboard"
     },
     {
         "id": 2,
-        "title": "Project Two",
-        "image_url": "/images/projects/project2.jpg",
-        "description": "text",
-        "project_url": "http://localhost:5173/blogs/2"
+        "title": "Winfinance Admin",
+        "image_url": "/images/projects/winfinance.png",
+        "description": "Micro Finance Project",
+        "project_url": "https://www.winfinance.com.mm/"
     },
     {
         "id": 3,
-        "title": "Project Three",
-        "image_url": "/images/projects/project3.jpg",
-        "description": "text",
-        "project_url": "http://localhost:5173/blogs/2"
+        "title": "Couria",
+        "image_url": "/images/projects/coursia.png",
+        "description": "E-Learning Platform",
+        "project_url": "https://demo.coursia.ai/"
     },
     {
         "id": 4,
-        "title": "Project Four",
-        "image_url": "/images/projects/project4.jpg",
-        "description": "text",
-        "project_url": "http://localhost:5173/blogs/2"
+        "title": "ELG",
+        "image_url": "/images/projects/elg.png",
+        "description": "E-Learning Platform",
+        "project_url": "https://eglearningguide.com/"
     },
     {
         "id": 5,
-        "title": "Project Five",
-        "image_url": "/images/projects/project5.jpg",
-        "description": "text",
-        "project_url": "http://localhost:5173/blogs/2"
+        "title": "Pets Heaven",
+        "image_url": "/images/projects/pet-heaven.png",
+        "description": "Pets Adoption Project",
+        "project_url": "https://pets-dun-nine.vercel.app/"
     },
     {
         "id": 6,
-        "title": "Project Six",
-        "image_url": "/images/projects/project6.jpg",
-        "description": "text",
-        "project_url": "http://localhost:5173/blogs/2"
+        "title": "Acodemy",
+        "image_url": "/images/projects/acodemy.png",
+        "description": "School Project",
+        "project_url": "http://acodemymm.com/"
     }
 ]

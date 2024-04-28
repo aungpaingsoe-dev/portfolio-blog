@@ -45,7 +45,7 @@ const SkillSection = () => {
                     <IoCodeSlashOutline className=' text-3xl ' />
                   </div>
                   <div className=' text-center text-xs md:text-sm '>
-                    Web Development
+                    Front End Dev
                   </div>
                 </motion.div>
               </div>
@@ -70,7 +70,7 @@ const SkillSection = () => {
                     <CiServer className=' text-3xl ' />
                   </div>
                   <div className=' text-xs md:text-sm '>
-                    DevOps
+                    Back End Dev
                   </div>
                 </motion.div>
               </div>
@@ -95,7 +95,7 @@ const SkillSection = () => {
                     <LiaUserTieSolid className=' text-3xl ' />
                   </div>
                   <div className=' text-xs md:text-sm '>
-                    Leadership
+                    Teaching
                   </div>
                 </motion.div>
               </div>
@@ -170,7 +170,7 @@ const SkillSection = () => {
                     <PiProjectorScreen className=' text-3xl ' />
                   </div>
                   <div className=' text-xs md:text-sm '>
-                    Project Management
+                    Quick Learning
                   </div>
                 </motion.div>
               </div>

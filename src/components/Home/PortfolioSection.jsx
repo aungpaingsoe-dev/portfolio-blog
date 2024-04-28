@@ -48,9 +48,9 @@ const PortfolioSection = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ type: "spring", bounce: 0.6, delay: 0.2 }}
                     className=' text-center md:mt-8 flex md:flex-row flex-col justify-center items-center w-full '>
-                    If you want to explored my other projects <span className=' flex gap-1 md:px-2 items-center cursor-pointer text-secondary '>
+                    If you want to explored my other projects <a href='https://github.com/aungpaingsoe097238' target='_black' className=' flex gap-1 md:px-2 items-center cursor-pointer text-secondary '>
                         <FaGithub className=' text-xl ' />
-                        Here my github profile </span>
+                        Here my github profile </a>
                 </motion.div>
             </div>
         </>
