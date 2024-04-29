@@ -34,7 +34,7 @@ const Footer = () => {
         transition={{ type: "spring", bounce: 0.6, delay: 0.7 }}
         viewport={{ once: true }}
       >
-        Copyright © All rights reserved by : <span className=' text-secondary '>PhyoZ</span>
+        Copyright © All rights reserved by : <span className=' text-secondary '>Aung Paing Soe</span>
       </motion.div>
     </div>
   )
