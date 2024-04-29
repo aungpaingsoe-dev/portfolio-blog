@@ -19,7 +19,7 @@ const HeroSection = () => {
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", bounce: 0.6, delay: 0.4 }}
-                        className=' text-2xl md:text-6xl font-bold '>
+                        className=' text-2xl md:text-5xl font-bold '>
                         { homeData.name }
                     </motion.div>
                     <motion.div
